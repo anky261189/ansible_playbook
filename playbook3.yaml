@@ -1,0 +1,17 @@
+---
+#playbook3 yaml file
+- hosts: all
+  become: yes
+  tasks:
+  - name: install git on ubuntu
+    apt:
+       name: git
+       state: present
+  - name: install tree on ubuntu node
+    apt:
+       name: tree
+       state: present
+  - name: install wget on ubuntu nodes
+    apt:
+       name: wget
+       state: present
