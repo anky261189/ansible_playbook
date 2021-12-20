@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: i want to install git on ubantu node
+    apt:
+       name: git
+       state: present
+  - name: install tree on ubantu node
+    apt:
+       name: tree
+       state: present
+       
